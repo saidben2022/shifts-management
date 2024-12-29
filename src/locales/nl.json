@@ -1,0 +1,574 @@
+{
+  "common": {
+    "save": "Opslaan",
+    "saving": "Opslaan...",
+    "delete": "Verwijderen",
+    "deleting": "Verwijderen...",
+    "cancel": "Annuleren",
+    "close": "Sluiten",
+    "confirm": "Bevestigen",
+    "edit": "Bewerken",
+    "update": "Bijwerken",
+    "loading": "Laden..."
+  },
+  "auth": {
+    "login": "Inloggen",
+    "logout": "Uitloggen",
+    "email": "E-mail",
+    "password": "Wachtwoord",
+    "loginRequired": "Inloggen vereist",
+    "pleaseLogin": "Log in om deze pagina te bekijken"
+  },
+  "navigation": {
+    "workers": "Medewerkers",
+    "shifts": "Diensten",
+    "calendar": "Kalender"
+  },
+  "workers": {
+    "title": "Medewerkers",
+    "addWorker": "Medewerker Toevoegen",
+    "editWorker": "Medewerker Bewerken",
+    "deleteWorker": "Medewerker Verwijderen",
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "workerId": "Medewerker ID",
+    "viewDetails": "Details Bekijken",
+    "setHours": "Periode-uren Toevoegen",
+    "workerInformation": "Medewerker Informatie",
+    "personalDetails": "Persoonlijke Gegevens",
+    "contracts": "Contracten",
+    "addContract": "Contract Toevoegen",
+    "editContract": "Contract Bewerken",
+    "deleteContract": "Contract Verwijderen",
+    "noContracts": "Geen contracten gevonden",
+    "contractDuration": "Contractduur",
+    "months": "maanden",
+    "startDate": "Startdatum",
+    "endDate": "Einddatum",
+    "statistics": {
+      "title": "Werknemersstatistieken",
+      "averageHours": "Gemiddelde Uren per Dag",
+      "periodSummary": "Periode Overzicht",
+      "totalWorkDays": "Totaal Werkdagen",
+      "totalHours": "Totaal Uren",
+      "sickLeaveDays": "Ziektedagen",
+      "vacationDays": "Vakantiedagen",
+      "unpaidLeaveDays": "Onbetaalde Verlofdagen",
+      "periodHours": "Periode-uren",
+      "remainingHours": "Resterende Uren",
+      "completionRate": "Voortgangspercentage",
+      "normalWorkdays": "Normale Dagen",
+      "weekendDays": "Weekenddagen",
+      "holidays": "Feestdagen",
+      "actions": "Acties",
+      "notSet": "Niet Ingesteld",
+      "setHours": "Periode-uren Instellen",
+      "warnings": {
+        "exceededHours": "Werknemers die hun periode-uren hebben overschreden",
+        "workerExceeded": "{{name}} heeft {{total}}u gewerkt van {{max}}u ({{exceeded}}u overschreden)"
+      }
+    },
+    "contract": {
+      "title": "Contractgegevens",
+      "type": "Contracttype",
+      "hoursPerWeek": "Uren per Week",
+      "startDate": "Startdatum",
+      "endDate": "Einddatum",
+      "notSet": "Niet ingesteld",
+      "fullTime": "Voltijd",
+      "daysRemaining": "{{days}} dagen resterend",
+      "endsToday": "Contract eindigt vandaag",
+      "expired": "Contract {{days}} dagen geleden verlopen"
+    },
+    "fields": {
+      "name": "Naam Medewerker"
+    },
+    "add": "Medewerker Toevoegen",
+    "status": {
+      "notWorking": "Niet aan het werk",
+      "noShiftScheduled": "Geen dienst gepland voor vandaag",
+      "periodHours": "Periode-uren",
+      "totalWorkingHours": "Totale werkuren",
+      "remainingHours": "Resterende uren",
+      "location": "Locatie",
+      "leavePeriod": "Verlofperiode",
+      "to": "tot"
+    },
+    "management": {
+      "title": "Medewerkerbeheer",
+      "addWorker": "Medewerker Toevoegen",
+      "addNewWorker": "Nieuwe Medewerker Toevoegen",
+      "fillDetails": "Vul hieronder de gegevens van de medewerker in. Klik op opslaan wanneer u klaar bent.",
+      "workerDetails": "Medewerkergegevens",
+      "viewAndManage": "Bekijk en beheer medewerkersinformatie en contracten",
+      "loading": "Laden...",
+      "errorLoading": "Fout bij het laden van medewerkers",
+      "success": {
+        "added": "Medewerker succesvol toegevoegd",
+        "updated": "Medewerker succesvol bijgewerkt",
+        "deleted": "Medewerker succesvol verwijderd"
+      },
+      "error": {
+        "adding": "Toevoegen medewerker mislukt",
+        "updating": "Bijwerken medewerker mislukt",
+        "deleting": "Verwijderen medewerker mislukt",
+        "loading": "Ophalen medewerkers mislukt"
+      }
+    },
+    "table": {
+      "workerId": "Medewerker ID",
+      "name": "Naam",
+      "contractStatus": "Contractstatus",
+      "contractDuration": "Contractduur",
+      "startDate": "Startdatum",
+      "endDate": "Einddatum",
+      "viewDetails": "Details Bekijken",
+      "status": {
+        "active": "Actief",
+        "inactive": "Inactief",
+        "daysRemaining": "{{days}} dagen resterend",
+        "noContract": "Geen Contract",
+        "months": "{{duration}} maanden"
+      }
+    }
+  },
+  "shifts": {
+    "title": "Diensten",
+    "add": "Dienst Toevoegen",
+    "editShift": "Dienst Bewerken",
+    "deleteShift": "Dienst Verwijderen",
+    "shiftDetails": "Dienstdetails",
+    "worker": "Medewerker",
+    "fields": {
+      "date": "Datum",
+      "type": "Type",
+      "location": "Locatie",
+      "hours": "Uren",
+      "worker": "Medewerker",
+      "startDate": "Startdatum",
+      "endDate": "Einddatum",
+      "selectStartDate": "Selecteer startdatum",
+      "selectEndDate": "Selecteer einddatum",
+      "selectLocation": "Selecteer locatie"
+    },
+    "grouping": {
+      "groupBy": "Groeperen op",
+      "groupByWorker": "Groeperen op Medewerker",
+      "groupByLocation": "Groeperen op Locatie"
+    },
+    "types": {
+      "normal_workday": "Normale Werkdag",
+      "weekend_day": "Weekenddag",
+      "holiday": "Feestdag",
+      "vacation": "Vakantie",
+      "sick_leave": "Ziekteverlof",
+      "unpaid_leave": "Onbetaald Verlof"
+    },
+    "periodHours": {
+      "title": "Periode Uren",
+      "setPeriodHours": "Periode Uren Instellen",
+      "setPeriodHoursDescription": "Stel het maximaal toegestane aantal uren in voor deze medewerker in de huidige periode",
+      "maxHours": "Maximale Periode-uren",
+      "currentHours": "Huidige Uren",
+      "periodDuration": "Periode Duur",
+      "warningTitle": "Waarschuwing: Overschrijding Huidige Uren",
+      "currentWorkedHours": "Huidige gewerkte uren",
+      "excessHours": "Overschreden uren"
+    },
+    "deleteConfirmation": {
+      "title": "Dienst Verwijderen",
+      "description": "Weet u zeker dat u deze dienst wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt."
+    },
+    "dialog": {
+      "title": "Dienst Toevoegen",
+      "description": "Vul de details in voor de nieuwe dienst",
+      "labels": {
+        "selectWorker": "Selecteer Medewerker",
+        "shiftType": "Diensttype",
+        "selectShiftType": "Selecteer Diensttype",
+        "startDate": "Startdatum",
+        "endDate": "Einddatum",
+        "selectDate": "Selecteer datum",
+        "hoursWorked": "Gewerkte Uren",
+        "location": "Locatie",
+        "enterLocation": "Voer werklocatie in",
+        "workerHoursInfo": "Medewerker Uren Informatie",
+        "maxHours": "Maximale Uren",
+        "workedHours": "Gewerkte Uren",
+        "remainingHours": "Resterende Uren"
+      },
+      "errors": {
+        "error": "Fout",
+        "pleaseSelectAWorker": "Selecteer een medewerker",
+        "pleaseSelectAStartDate": "Selecteer een startdatum",
+        "pleaseSelectAnEndDateForLeavePeriod": "Selecteer een einddatum voor de verlofperiode",
+        "pleaseEnterHoursWorked": "Voer gewerkte uren in",
+        "invalidHours": "Ongeldige uren",
+        "maxHoursNotSet": "Periode-uren niet ingesteld voor deze werknemer",
+        "hoursMustBeBetween0And24": "Uren moeten tussen 0 en 24 liggen",
+        "pleaseEnterValidHours": "Voer geldige uren in",
+        "failedToAddShift": "Dienst toevoegen mislukt",
+        "invalidShiftType": "Ongeldig Diensttype",
+        "cannotSetNormalWorkdayOnWeekends": "Kan geen normale werkdag instellen in het weekend",
+        "cannotSetWeekendDayOnWeekdays": "Kan geen weekenddag instellen op doordeweekse dagen"
+      },
+      "warnings": {
+        "exceedingHours": "Waarschuwing: Overschrijding Uren",
+        "exceedingHoursBy": "Overschrijding van maximale uren met {{hours}} uren"
+      }
+    },
+    "shiftTypes": {
+      "NORMAL_WORKDAY": "Normale Werkdag",
+      "WEEKEND_DAY": "Weekenddag",
+      "HOLIDAY": "Feestdag",
+      "SICK_LEAVE": "Ziekteverlof",
+      "VACATION": "Vakantie",
+      "UNPAID_LEAVE": "Onbetaald Verlof"
+    },
+    "periodHours": {
+      "title": "Periode Uren",
+      "setPeriodHours": "Periode Uren Instellen",
+      "setPeriodHoursDescription": "Stel het maximaal toegestane aantal uren in voor deze medewerker in de huidige periode",
+      "maxHours": "Maximale Periode-uren",
+      "currentHours": "Huidige Uren",
+      "periodDuration": "Periode Duur",
+      "warningTitle": "Waarschuwing: Overschrijding Huidige Uren",
+      "currentWorkedHours": "Huidige gewerkte uren",
+      "excessHours": "Overschreden uren"
+    },
+    "deleteConfirmation": {
+      "title": "Dienst Verwijderen",
+      "description": "Weet u zeker dat u deze dienst wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt."
+    },
+    "daySchedule": "Werknemersrooster",
+    "noWorkersScheduled": "Geen werknemers ingepland voor deze dag",
+    "addShiftPrompt": "Klik op 'Dienst Toevoegen' om werknemers in te plannen",
+    "noShiftsFound": "Geen diensten gevonden voor de geselecteerde periode",
+    "adjustFilters": "Probeer de filters aan te passen of selecteer een andere periode",
+    "card": {
+      "unknownWorker": "Onbekende Medewerker",
+      "hours": "{{hours}}u",
+      "to": "tot"
+    },
+    "calendar": {
+      "addShift": "Dienst toevoegen",
+      "today": "Vandaag"
+    },
+    "days": {
+      "Monday": "Maandag",
+      "Tuesday": "Dinsdag",
+      "Wednesday": "Woensdag",
+      "Thursday": "Donderdag",
+      "Friday": "Vrijdag",
+      "Saturday": "Zaterdag",
+      "Sunday": "Zondag"
+    },
+    "periods": {
+      "title": "Periode",
+      "week": "Week",
+      "period": "Periode {{number}}",
+      "weeks": "Weken {{start}} - {{end}}",
+      "year": "Jaar",
+      "selectPeriod": "Selecteer Periode",
+      "selectWeek": "Selecteer Week",
+      "selectYear": "Selecteer Jaar"
+    },
+    "details": {
+      "title": "Dienst Details",
+      "description": "Bekijk gedetailleerde informatie over deze dienst",
+      "labels": {
+        "worker": "Medewerker",
+        "shiftType": "Diensttype",
+        "duration": "Duur",
+        "location": "Locatie",
+        "notes": "Notities",
+        "day": "dag",
+        "days": "dagen",
+        "hours": "uur"
+      },
+      "delete": {
+        "button": "Dienst Verwijderen",
+        "title": "Dienst Verwijderen",
+        "description": "Weet je zeker dat je deze dienst wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
+        "deleting": "Verwijderen...",
+        "confirm": "Verwijderen",
+        "cancel": "Annuleren"
+      }
+    },
+    "toast": {
+      "success": "Succes",
+      "error": "Fout",
+      "shiftAddedSuccessfully": "Dienst succesvol toegevoegd",
+      "shiftDeletedSuccessfully": "Dienst succesvol verwijderd",
+      "errorSavingShift": "Fout bij het opslaan van dienst",
+      "errorDeletingShift": "Fout bij het verwijderen van dienst"
+    }
+  },
+  "calendar": {
+    "today": "Vandaag",
+    "week": "Week",
+    "period": "Periode",
+    "year": "Jaar"
+  },
+  "days": {
+    "monday": "Maandag",
+    "tuesday": "Dinsdag",
+    "wednesday": "Woensdag",
+    "thursday": "Donderdag",
+    "friday": "Vrijdag",
+    "saturday": "Zaterdag",
+    "sunday": "Zondag"
+  },
+  "validation": {
+    "required": "Dit veld is verplicht",
+    "invalidEmail": "Ongeldig e-mailadres",
+    "minLength": "Minimaal {{count}} karakters",
+    "maxLength": "Maximaal {{count}} karakters",
+    "passwordMismatch": "Wachtwoorden komen niet overeen",
+    "invalidDate": "Ongeldige datum",
+    "invalidTime": "Ongeldige tijd",
+    "endTimeBeforeStart": "Eindtijd moet na starttijd zijn",
+    "maxHoursExceeded": "Maximum aantal uren overschreden"
+  },
+  "landing": {
+    "title": "Werknemers Managementsysteem",
+    "subtitle": "Stroomlijn uw personeelsbeheer met onze uitgebreide oplossing voor het plannen, volgen en organiseren van uw team.",
+    "getStarted": "Aan de slag",
+    "learnMore": "Meer informatie",
+    "features": {
+      "title": "Kernfuncties",
+      "scheduling": {
+        "title": "Slim Roosteren",
+        "description": "Maak en beheer werkroosters met gemak. Drag-and-drop interface voor snelle aanpassingen."
+      },
+      "attendance": {
+        "title": "Aanwezigheidsregistratie",
+        "description": "Monitor aanwezigheid in realtime. Ontvang directe meldingen voor late aankomst of afwezigheid."
+      },
+      "notifications": {
+        "title": "Slimme Meldingen",
+        "description": "Blijf op de hoogte met automatische meldingen voor roosterwijzigingen, overwerk en belangrijke updates."
+      }
+    },
+    "benefits": {
+      "title": "Voordelen",
+      "analytics": {
+        "title": "Prestatie Overzicht",
+        "description": "Volg de uren en aanwezigheid van uw medewerkers met overzichtelijke dashboards."
+      },
+      "automation": {
+        "title": "Eenvoudig Beheer",
+        "description": "Automatische tijdberekeningen en roosterupdates om u tijd te besparen."
+      },
+      "compliance": {
+        "title": "Urenbeheer",
+        "description": "Monitor werkuren en ontvang waarschuwingen wanneer medewerkers overwerk naderen."
+      },
+      "cta": "Naar Dashboard"
+    }
+  },
+  "learnMore": {
+    "title": "Personeelsbeheer Vereenvoudigd",
+    "subtitle": "Beheer uw werknemers en diensten efficiënt met ons gebruiksvriendelijke platform",
+    "getStarted": "Begin Nu",
+    "features": {
+      "title": "Belangrijkste Functies",
+      "workers": {
+        "title": "Werknemersbeheer",
+        "description": "Beheer uw personeel eenvoudig met onze intuïtieve interface.",
+        "details": [
+          "Werknemersprofielen toevoegen en bewerken",
+          "Werknemersdetails en status bekijken",
+          "Beschikbaarheid bijhouden",
+          "Toewijzingen beheren",
+          "Snel zoeken en filteren"
+        ]
+      },
+      "scheduling": {
+        "title": "Dienstenbeheer",
+        "description": "Maak en beheer diensten met onze interactieve kalender.",
+        "details": [
+          "Interactieve kalenderweergave",
+          "Diensten maken en bewerken",
+          "Werknemers toewijzen aan diensten",
+          "Diensttijden instellen",
+          "Dienstdetails bekijken"
+        ]
+      },
+      "dashboard": {
+        "title": "Dashboard Overzicht",
+        "description": "Krijg een snel overzicht van uw personeel en roosters.",
+        "details": [
+          "Aankomende diensten bekijken",
+          "Werknemersstatistieken",
+          "Roosteroverzicht",
+          "Snelle navigatie",
+          "Belangrijke meldingen"
+        ]
+      }
+    },
+    "howItWorks": {
+      "title": "Hoe Het Werkt",
+      "subtitle": "Begin in 4 eenvoudige stappen",
+      "step1": {
+        "title": "Voeg Werknemers Toe",
+        "description": "Maak werknemersprofielen aan",
+        "details": "Voeg werknemersinformatie toe, inclusief naam, contactgegevens en beschikbaarheid"
+      },
+      "step2": {
+        "title": "Maak Diensten",
+        "description": "Stel uw rooster in",
+        "details": "Maak diensten en specificeer tijden met onze interactieve kalender"
+      },
+      "step3": {
+        "title": "Wijs Werknemers Toe",
+        "description": "Beheer toewijzingen",
+        "details": "Wijs werknemers toe aan diensten en beheer hun roosters"
+      },
+      "step4": {
+        "title": "Houd Alles Bij",
+        "description": "Blijf georganiseerd",
+        "details": "Monitor diensten en werknemers vanaf uw dashboard"
+      }
+    },
+    "benefits": {
+      "title": "Waarom Voor Ons Kiezen",
+      "subtitle": "Voordelen van onze oplossing",
+      "items": {
+        "efficiency": {
+          "title": "Gebruiksvriendelijk",
+          "description": "Eenvoudige en intuïtieve interface die minimale training vereist"
+        },
+        "organization": {
+          "title": "Blijf Georganiseerd",
+          "description": "Bewaar alle personeelsgegevens op één plek"
+        },
+        "flexibility": {
+          "title": "Flexibel Beheer",
+          "description": "Beheer werknemers en diensten op uw manier"
+        },
+        "accessibility": {
+          "title": "Altijd Beschikbaar",
+          "description": "Toegang tot uw gegevens, waar en wanneer u maar wilt"
+        }
+      }
+    },
+    "cta": {
+      "title": "Klaar Om Te Beginnen?",
+      "description": "Begin vandaag nog met efficiënter personeelsbeheer",
+      "button": "Nu Beginnen"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "calendar": {
+      "title": "Kalender",
+      "year": "Jaar",
+      "week": "Week",
+      "weekNumber": "Week {{week}}",
+      "period": "Periode",
+      "selectPeriod": "Selecteer periode",
+      "selectWeek": "Selecteer week"
+    },
+    "shifts": {
+      "title": "Diensten",
+      "addShift": "Dienst Toevoegen",
+      "editShift": "Dienst Bewerken",
+      "deleteShift": "Dienst Verwijderen",
+      "addNew": "Nieuwe Dienst Toevoegen",
+      "shiftTypes": {
+        "NORMAL_WORKDAY": "Normale Werkdag",
+        "WEEKEND_DAY": "Weekenddag",
+        "HOLIDAY": "Feestdag",
+        "SICK_LEAVE": "Ziekteverlof",
+        "VACATION": "Vakantie",
+        "UNPAID_LEAVE": "Onbetaald Verlof"
+      },
+      "messages": {
+        "addSuccess": "Dienst succesvol toegevoegd",
+        "editSuccess": "Dienst succesvol bijgewerkt",
+        "deleteSuccess": "Dienst succesvol verwijderd",
+        "error": "Er is een fout opgetreden"
+      },
+      "fields": {
+        "worker": "Werknemer",
+        "shiftType": "Diensttype",
+        "location": "Locatie",
+        "hoursWorked": "Gewerkte uren",
+        "notes": "Notities"
+      },
+      "shiftTypes": {
+        "NORMAL_WORKDAY": "Normale werkdag",
+        "WEEKEND_DAY": "Weekenddag",
+        "HOLIDAY": "Feestdag",
+        "SICK_LEAVE": "Ziekteverlof",
+        "VACATION": "Vakantie",
+        "UNPAID_LEAVE": "Onbetaald verlof"
+      }
+    },
+    "workers": {
+      "title": "Werknemersstatus",
+      "table": {
+        "name": "Naam",
+        "currentHours": "Huidige Uren",
+        "maxHours": "Max Uren",
+        "status": "Status",
+        "actions": "Acties"
+      },
+      "status": {
+        "withinLimit": "Binnen Limiet",
+        "exceeding": "Overschrijding",
+        "hoursExceeded": "uren overschreden"
+      }
+    },
+    "periodHours": {
+      "title": "Periode-uren",
+      "setMaxHours": "Max Uren Instellen",
+      "currentPeriod": "Huidige Periode",
+      "setPeriodHours": "Periode Uren Instellen"
+    },
+    "dayWorkers": {
+      "title": "Werknemers voor {{date}}",
+      "noShifts": "Geen werknemers ingepland voor deze dag",
+      "viewDetails": "Details bekijken"
+    },
+    "schedule": {
+      "title": "Werknemers Rooster Overzicht",
+      "startDate": "Startdatum",
+      "endDate": "Einddatum",
+      "location": "Locatie",
+      "selectLocation": "Selecteer Locatie",
+      "allLocations": "Alle Locaties",
+      "groupBy": "Groeperen op",
+      "groupByWorker": "Groeperen op Medewerker",
+      "groupByLocation": "Groeperen op Locatie",
+      "date": "Datum",
+      "worker": "Medewerker",
+      "shiftType": "Diensttype",
+      "startTime": "Starttijd",
+      "endTime": "Eindtijd",
+      "hoursWorked": "Gewerkte Uren"
+    }
+  },
+  "dialog": {
+    "deleteConfirmation": {
+      "title": "Verwijderen Bevestigen",
+      "message": "Weet u zeker dat u dit item wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
+      "success": "Item succesvol verwijderd",
+      "error": "Kon item niet verwijderen"
+    },
+    "error": {
+      "title": "Fout",
+      "message": "Er is een fout opgetreden. Probeer het opnieuw.",
+      "close": "Sluiten"
+    },
+    "success": {
+      "title": "Succes",
+      "close": "Sluiten"
+    },
+    "warning": {
+      "title": "Waarschuwing",
+      "close": "Sluiten"
+    }
+  }
+}

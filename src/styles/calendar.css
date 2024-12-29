@@ -1,0 +1,37 @@
+@import 'react-big-calendar/lib/css/react-big-calendar.css';
+
+.rbc-calendar {
+  @apply font-sans;
+}
+
+.rbc-header {
+  @apply bg-muted text-muted-foreground py-2 font-medium;
+}
+
+.rbc-time-header {
+  @apply bg-background;
+}
+
+.rbc-time-content {
+  @apply bg-background;
+}
+
+.rbc-event {
+  @apply bg-primary text-primary-foreground rounded-md !important;
+}
+
+.rbc-today {
+  @apply bg-muted/50;
+}
+
+.rbc-current-time-indicator {
+  @apply bg-primary;
+}
+
+.rbc-time-slot {
+  @apply text-muted-foreground;
+}
+
+.rbc-label {
+  @apply text-muted-foreground;
+}

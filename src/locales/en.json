@@ -1,0 +1,556 @@
+{
+  "common": {
+    "save": "Save",
+    "saving": "Saving...",
+    "delete": "Delete",
+    "deleting": "Deleting...",
+    "cancel": "Cancel",
+    "close": "Close",
+    "confirm": "Confirm",
+    "edit": "Edit",
+    "update": "Update",
+    "loading": "Loading..."
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "loginRequired": "Login Required",
+    "pleaseLogin": "Please log in to view this page"
+  },
+  "navigation": {
+    "workers": "Workers",
+    "shifts": "Shifts",
+    "calendar": "Calendar"
+  },
+  "workers": {
+    "title": "Workers",
+    "addWorker": "Add Worker",
+    "editWorker": "Edit Worker",
+    "deleteWorker": "Delete Worker",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "workerId": "Worker ID",
+    "viewDetails": "View Details",
+    "setHours": "Set Hours",
+    "workerInformation": "Worker Information",
+    "personalDetails": "Personal Details",
+    "contracts": "Contracts",
+    "addContract": "Add Contract",
+    "editContract": "Edit Contract",
+    "deleteContract": "Delete Contract",
+    "noContracts": "No contracts found",
+    "contractDuration": "Contract Duration",
+    "months": "months",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "statistics": {
+      "title": "Worker Statistics",
+      "completionRate": "Progress Rate",
+      "averageHours": "Average Hours per Day",
+      "periodSummary": "Period Summary",
+      "totalWorkDays": "Work Days",
+      "totalHours": "Total Hours",
+      "periodHours": "Target Hours",
+      "remainingHours": "Remaining Hours",
+      "sickLeaveDays": "Sick Leave",
+      "vacationDays": "Vacation",
+      "unpaidLeaveDays": "Unpaid Leave",
+      "normalWorkdays": "Normal Days",
+      "weekendDays": "Weekend Days",
+      "holidays": "Holidays",
+      "actions": "Actions",
+      "notSet": "Not Set",
+      "setHours": "Set Period Hours",
+      "warnings": {
+        "exceededHours": "Workers who exceeded their period hours",
+        "workerExceeded": "{{name}} worked {{total}}h out of {{max}}h (exceeded by {{exceeded}}h)"
+      }
+    },
+    "contract": {
+      "title": "Contract Details",
+      "type": "Contract Type",
+      "hoursPerWeek": "Hours per Week",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "notSet": "Not set",
+      "fullTime": "Full Time",
+      "daysRemaining": "{{days}} days remaining",
+      "endsToday": "Contract ends today",
+      "expired": "Contract expired {{days}} days ago"
+    },
+    "fields": {
+      "name": "Worker Name"
+    },
+    "add": "Add Worker",
+    "status": {
+      "notWorking": "Not Working",
+      "noShiftScheduled": "No shift scheduled for today",
+      "periodHours": "Period Hours",
+      "totalWorkingHours": "Total Working Hours",
+      "remainingHours": "Remaining Hours",
+      "location": "Location",
+      "leavePeriod": "Leave Period",
+      "to": "to"
+    },
+    "management": {
+      "title": "Workers Management",
+      "addWorker": "Add Worker",
+      "addNewWorker": "Add New Worker",
+      "fillDetails": "Fill in the worker's details below. Click save when you're done.",
+      "workerDetails": "Worker Details",
+      "viewAndManage": "View and manage worker information and contracts",
+      "loading": "Loading...",
+      "errorLoading": "Error loading workers",
+      "success": {
+        "added": "Worker added successfully",
+        "updated": "Worker updated successfully",
+        "deleted": "Worker deleted successfully"
+      },
+      "error": {
+        "adding": "Failed to add worker",
+        "updating": "Failed to update worker",
+        "deleting": "Failed to delete worker",
+        "loading": "Failed to fetch workers"
+      }
+    },
+    "table": {
+      "workerId": "Worker ID",
+      "name": "Name",
+      "contractStatus": "Contract Status",
+      "contractDuration": "Contract Duration",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "viewDetails": "View Details",
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive",
+        "daysRemaining": "{{days}} days remaining",
+        "noContract": "No Contract",
+        "months": "{{duration}} months"
+      }
+    },
+    "periodHours": {
+      "title": "Period Hours - {{name}}",
+      "hoursLabel": "Period Hours",
+      "save": "Save",
+      "cancel": "Cancel"
+    }
+  },
+  "shifts": {
+    "title": "Shifts",
+    "add": "Add Shift",
+    "editShift": "Edit Shift",
+    "deleteShift": "Delete Shift",
+    "shiftDetails": "Shift Details",
+    "worker": "Worker",
+    "fields": {
+      "date": "Date",
+      "type": "Type",
+      "location": "Location",
+      "hours": "Hours",
+      "worker": "Worker",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "selectStartDate": "Select start date",
+      "selectEndDate": "Select end date",
+      "selectLocation": "Select location"
+    },
+    "grouping": {
+      "groupBy": "Group By",
+      "groupByWorker": "Group by Worker",
+      "groupByLocation": "Group by Location"
+    },
+    "types": {
+      "normal_workday": "Normal Workday",
+      "weekend_day": "Weekend Day",
+      "holiday": "Holiday",
+      "vacation": "Vacation",
+      "sick_leave": "Sick Leave",
+      "unpaid_leave": "Unpaid Leave"
+    },
+    "periodHours": {
+      "title": "Period Hours",
+      "setPeriodHours": "Set Period Hours",
+      "setPeriodHoursDescription": "Set the maximum allowed hours for this worker in the current period",
+      "maxHours": "Maximum Period Hours",
+      "currentHours": "Current Hours",
+      "periodDuration": "Period Duration",
+      "warningTitle": "Warning: Exceeding Current Hours",
+      "currentWorkedHours": "Current worked hours",
+      "excessHours": "Excess hours"
+    },
+    "deleteConfirmation": {
+      "title": "Delete Shift",
+      "description": "Are you sure you want to delete this shift? This action cannot be undone."
+    },
+    "dialog": {
+      "title": "Add Shift",
+      "description": "Fill in the details for the new shift",
+      "labels": {
+        "selectWorker": "Select Worker",
+        "shiftType": "Shift Type",
+        "selectShiftType": "Select Shift Type",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "selectDate": "Select date",
+        "hoursWorked": "Hours Worked",
+        "location": "Location",
+        "enterLocation": "Enter work location",
+        "workerHoursInfo": "Worker Hours Information",
+        "maxHours": "Maximum Hours",
+        "workedHours": "Hours Worked",
+        "remainingHours": "Remaining Hours"
+      },
+      "errors": {
+        "error": "Error",
+        "pleaseSelectAWorker": "Please select a worker",
+        "pleaseSelectAStartDate": "Please select a start date",
+        "pleaseSelectAnEndDateForLeavePeriod": "Please select an end date for the leave period",
+        "pleaseEnterHoursWorked": "Please enter hours worked",
+        "invalidHours": "Invalid hours",
+        "maxHoursNotSet": "Period hours not set for this worker",
+        "hoursMustBeBetween0And24": "Hours must be between 0 and 24",
+        "pleaseEnterValidHours": "Please enter valid hours",
+        "failedToAddShift": "Failed to add shift",
+        "invalidShiftType": "Invalid Shift Type",
+        "cannotSetNormalWorkdayOnWeekends": "Cannot set normal workday on weekends",
+        "cannotSetWeekendDayOnWeekdays": "Cannot set weekend day on weekdays"
+      },
+      "warnings": {
+        "exceedingHours": "Warning: Exceeding Hours",
+        "exceedingHoursBy": "Exceeding maximum hours by {{hours}} hours"
+      }
+    },
+    "shiftTypes": {
+      "NORMAL_WORKDAY": "Normal Workday",
+      "WEEKEND_DAY": "Weekend Day",
+      "HOLIDAY": "Holiday",
+      "SICK_LEAVE": "Sick Leave",
+      "VACATION": "Vacation",
+      "UNPAID_LEAVE": "Unpaid Leave"
+    },
+    "card": {
+      "unknownWorker": "Unknown Worker",
+      "hours": "{{hours}}h",
+      "to": "to"
+    },
+    "calendar": {
+      "addShift": "Add shift",
+      "today": "Today"
+    },
+    "days": {
+      "Monday": "Monday",
+      "Tuesday": "Tuesday",
+      "Wednesday": "Wednesday",
+      "Thursday": "Thursday",
+      "Friday": "Friday",
+      "Saturday": "Saturday",
+      "Sunday": "Sunday"
+    },
+    "periods": {
+      "title": "Period",
+      "week": "Week",
+      "period": "Period {{number}}",
+      "weeks": "Weeks {{start}} - {{end}}",
+      "year": "Year",
+      "selectPeriod": "Select Period",
+      "selectWeek": "Select Week",
+      "selectYear": "Select Year"
+    },
+    "daySchedule": "Workers Schedule",
+    "noWorkersScheduled": "No workers scheduled for this day",
+    "addShiftPrompt": "Click the 'Add Shift' button to schedule workers",
+    "noShiftsFound": "No shifts found for the selected period",
+    "adjustFilters": "Try adjusting your filters or selecting a different date range",
+    "details": {
+      "title": "Shift Details",
+      "description": "View detailed information about this shift",
+      "labels": {
+        "worker": "Worker",
+        "shiftType": "Shift Type",
+        "duration": "Duration",
+        "location": "Location",
+        "notes": "Notes",
+        "day": "day",
+        "days": "days",
+        "hours": "hours"
+      },
+      "delete": {
+        "button": "Delete Shift",
+        "title": "Delete Shift",
+        "description": "Are you sure you want to delete this shift? This action cannot be undone.",
+        "deleting": "Deleting...",
+        "confirm": "Delete",
+        "cancel": "Cancel"
+      }
+    },
+    "toast": {
+      "success": "Success",
+      "error": "Error",
+      "shiftAddedSuccessfully": "Shift added successfully",
+      "shiftDeletedSuccessfully": "Shift deleted successfully",
+      "errorSavingShift": "Error saving shift",
+      "errorDeletingShift": "Failed to delete shift"
+    }
+  },
+  "calendar": {
+    "today": "Today",
+    "week": "Week",
+    "period": "Period",
+    "year": "Year"
+  },
+  "days": {
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday"
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "minLength": "Minimum {{count}} characters",
+    "maxLength": "Maximum {{count}} characters",
+    "passwordMismatch": "Passwords do not match",
+    "invalidDate": "Invalid date",
+    "invalidTime": "Invalid time",
+    "endTimeBeforeStart": "End time must be after start time",
+    "maxHoursExceeded": "Maximum hours exceeded"
+  },
+  "landing": {
+    "title": "Streamline Your Workforce Management",
+    "subtitle": "Efficient, transparent, and user-friendly platform for managing your workers' schedules and performance.",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "features": {
+      "title": "Core Features",
+      "scheduling": {
+        "title": "Smart Scheduling",
+        "description": "Create and manage work schedules with ease. Drag-and-drop interface for quick adjustments."
+      },
+      "attendance": {
+        "title": "Attendance Tracking",
+        "description": "Monitor attendance in real-time. Get instant alerts for late arrivals or absences."
+      },
+      "notifications": {
+        "title": "Smart Notifications",
+        "description": "Stay informed with automated alerts for schedule changes, overtime, and important updates."
+      }
+    },
+    "benefits": {
+      "title": "Benefits",
+      "analytics": {
+        "title": "Performance Overview",
+        "description": "Track your workers' hours and attendance with easy-to-read dashboards."
+      },
+      "automation": {
+        "title": "Easy Management",
+        "description": "Automatic time calculations and schedule updates to save you time."
+      },
+      "compliance": {
+        "title": "Hours Control",
+        "description": "Monitor working hours and get alerts when workers approach overtime."
+      },
+      "cta": "Go to Dashboard"
+    }
+  },
+  "learnMore": {
+    "title": "Workforce Management Made Simple",
+    "subtitle": "Efficiently manage your workers and shifts with our easy-to-use platform",
+    "getStarted": "Get Started Now",
+    "features": {
+      "title": "Key Features",
+      "workers": {
+        "title": "Worker Management",
+        "description": "Easily manage your workforce with our intuitive interface.",
+        "details": [
+          "Add and edit worker profiles",
+          "View worker details and status",
+          "Track worker availability",
+          "Manage worker assignments",
+          "Quick search and filtering"
+        ]
+      },
+      "scheduling": {
+        "title": "Shift Management",
+        "description": "Create and manage shifts with our interactive calendar.",
+        "details": [
+          "Interactive calendar view",
+          "Create and edit shifts",
+          "Assign workers to shifts",
+          "Set shift duration and times",
+          "View shift details"
+        ]
+      },
+      "dashboard": {
+        "title": "Dashboard Overview",
+        "description": "Get a quick overview of your workforce and schedules.",
+        "details": [
+          "View upcoming shifts",
+          "Worker statistics",
+          "Schedule overview",
+          "Quick navigation",
+          "Important notifications"
+        ]
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Get started in 4 simple steps",
+      "step1": {
+        "title": "Add Workers",
+        "description": "Create worker profiles",
+        "details": "Add worker information including name, contact details, and availability"
+      },
+      "step2": {
+        "title": "Create Shifts",
+        "description": "Set up your schedule",
+        "details": "Create shifts and specify times using our interactive calendar"
+      },
+      "step3": {
+        "title": "Assign Workers",
+        "description": "Manage assignments",
+        "details": "Assign workers to shifts and manage their schedules"
+      },
+      "step4": {
+        "title": "Track Everything",
+        "description": "Stay organized",
+        "details": "Monitor shifts and workers from your dashboard"
+      }
+    },
+    "benefits": {
+      "title": "Why Choose Us",
+      "subtitle": "Benefits of our solution",
+      "items": {
+        "efficiency": {
+          "title": "Easy to Use",
+          "description": "Simple and intuitive interface that requires minimal training"
+        },
+        "organization": {
+          "title": "Stay Organized",
+          "description": "Keep all your workforce data in one place"
+        },
+        "flexibility": {
+          "title": "Flexible Management",
+          "description": "Manage workers and shifts your way"
+        },
+        "accessibility": {
+          "title": "Always Available",
+          "description": "Access your data anytime, anywhere"
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Start managing your workforce more efficiently today",
+      "button": "Get Started Now"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "calendar": {
+      "title": "Calendar",
+      "year": "Year",
+      "week": "Week",
+      "weekNumber": "Week {{week}}",
+      "selectPeriod": "Select period",
+      "selectWeek": "Select week"
+    },
+    "dayWorkers": {
+      "title": "Workers for {{date}}",
+      "noShifts": "No workers scheduled for this day",
+      "viewDetails": "View Details"
+    },
+    "shifts": {
+      "title": "Shifts",
+      "addShift": "Add Shift",
+      "editShift": "Edit Shift",
+      "deleteShift": "Delete Shift",
+      "fields": {
+        "worker": "Worker",
+        "shiftType": "Shift Type",
+        "location": "Location",
+        "hoursWorked": "Hours Worked",
+        "notes": "Notes"
+      },
+      "shiftTypes": {
+        "NORMAL_WORKDAY": "Normal Workday",
+        "WEEKEND_DAY": "Weekend Day",
+        "HOLIDAY": "Holiday",
+        "SICK_LEAVE": "Sick Leave",
+        "VACATION": "Vacation",
+        "UNPAID_LEAVE": "Unpaid Leave"
+      },
+      "messages": {
+        "addSuccess": "Shift added successfully",
+        "editSuccess": "Shift updated successfully",
+        "deleteSuccess": "Shift deleted successfully",
+        "error": "An error occurred"
+      }
+    },
+    "workers": {
+      "title": "Worker Status",
+      "table": {
+        "name": "Name",
+        "currentHours": "Current Hours",
+        "maxHours": "Max Hours",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "status": {
+        "withinLimit": "Within Limit",
+        "exceeding": "Exceeding",
+        "hoursExceeded": "hours exceeded"
+      }
+    },
+    "periodHours": {
+      "title": "Period Hours",
+      "setMaxHours": "Set Max Hours",
+      "currentPeriod": "Current Period"
+    },
+    "schedule": {
+      "title": "Worker Schedule Overview"
+    }
+  },
+  "dialog": {
+    "deleteConfirmation": {
+      "title": "Delete Confirmation",
+      "message": "Are you sure you want to delete this item? This action cannot be undone.",
+      "success": "Item deleted successfully",
+      "error": "Failed to delete item"
+    },
+    "error": {
+      "title": "Error",
+      "message": "An error occurred. Please try again.",
+      "close": "Close"
+    },
+    "success": {
+      "title": "Success",
+      "close": "Close"
+    },
+    "warning": {
+      "title": "Warning",
+      "close": "Close"
+    }
+  },
+  "schedule": {
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "location": "Location",
+    "selectLocation": "Select Location",
+    "allLocations": "All Locations",
+    "groupBy": "Group By",
+    "groupByWorker": "Group by Worker",
+    "groupByLocation": "Group by Location",
+    "date": "Date",
+    "worker": "Worker",
+    "shiftType": "Shift Type",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "hoursWorked": "Hours Worked"
+  }
+}

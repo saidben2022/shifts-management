@@ -1,0 +1,271 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+#root {
+  width: 100%;
+}
+
+/* Calendar Styles */
+.fc {
+  --fc-border-color: theme('colors.gray.200');
+  --fc-button-bg-color: theme('colors.gray.100');
+  --fc-button-border-color: theme('colors.gray.300');
+  --fc-button-hover-bg-color: theme('colors.gray.200');
+  --fc-button-hover-border-color: theme('colors.gray.400');
+  --fc-button-active-bg-color: theme('colors.gray.300');
+  --fc-button-active-border-color: theme('colors.gray.500');
+  --fc-event-bg-color: theme('colors.blue.600');
+  --fc-event-border-color: theme('colors.blue.600');
+  --fc-today-bg-color: theme('colors.blue.50');
+}
+
+.fc .fc-button {
+  @apply font-semibold text-sm px-4 py-2 rounded-md shadow-sm;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
+  @apply bg-gray-200 border-gray-300;
+}
+
+.fc .fc-toolbar-title {
+  @apply text-xl font-bold text-gray-900;
+}
+
+.fc .fc-event {
+  @apply rounded-md shadow-sm cursor-pointer transition-opacity;
+}
+
+.fc .fc-event:hover {
+  @apply opacity-90;
+}
+
+.fc .fc-daygrid-day.fc-day-today,
+.fc .fc-timegrid-col.fc-day-today {
+  @apply bg-blue-50;
+}
+
+.fc .fc-timegrid-slot {
+  @apply h-12;
+}
+
+/* Period Selector Styles */
+.period-selector {
+  @apply bg-white rounded-lg shadow-sm;
+}
+
+.period-selector .select-trigger {
+  @apply h-10 px-4 py-2 text-sm font-medium;
+}
+
+/* Calendar Period Styles */
+.fc .fc-toolbar {
+  @apply p-4 flex-wrap gap-4;
+}
+
+.fc .fc-toolbar-title {
+  @apply text-xl font-bold text-gray-900 min-w-[200px];
+}
+
+.fc .fc-button-group {
+  @apply shadow-sm rounded-md overflow-hidden;
+}
+
+.fc .fc-button {
+  @apply border-0 bg-white hover:bg-gray-50 text-gray-700 font-medium px-4;
+}
+
+.fc .fc-button.fc-button-active {
+  @apply bg-blue-50 text-blue-600;
+}
+
+.fc .fc-timegrid-slot {
+  @apply h-16;
+}
+
+.fc .fc-timegrid-slot-label {
+  @apply text-sm font-medium text-gray-500;
+}
+
+.fc .fc-timegrid-axis {
+  @apply border-r border-gray-200;
+}
+
+.fc .fc-day-today {
+  @apply bg-blue-50/50;
+}
+
+.fc .fc-event {
+  @apply rounded-md border-none shadow-sm;
+}
+
+.fc .fc-event-main {
+  @apply p-1;
+}
+
+.fc .fc-event-time {
+  @apply font-medium;
+}
+
+.fc .fc-event-title {
+  @apply font-normal text-sm;
+}
+
+.fc .fc-timegrid-event {
+  @apply min-h-[40px];
+}
+
+.fc .fc-timegrid-now-indicator-line {
+  @apply border-red-500;
+}
+
+.fc .fc-timegrid-now-indicator-arrow {
+  @apply border-red-500;
+}
+
+/* Business Hours */
+.fc .fc-non-business {
+  @apply bg-gray-50;
+}

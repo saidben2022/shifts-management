@@ -1,0 +1,8 @@
+Please add the following screenshots to this directory:
+
+1. workers.png - Screenshot of the Workers management page showing the list of workers
+2. calendar.png - Screenshot of the Calendar view showing shifts
+3. shifts.png - Screenshot of the Shifts management interface
+4. dashboard.png - Screenshot of the Dashboard overview
+
+Make sure the screenshots are clear and show the actual functionality of the app.
